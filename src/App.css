@@ -1,0 +1,199 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    padding: 7px 40px;
+    position: relative;
+}
+
+.right_nav ul{
+    display: flex;
+}
+
+
+.nav_link{
+    color: #fff;
+    padding: 8px 50px;
+    font-size: 21px;
+}
+.nav_link:hover{
+    background-color: #fff;
+    color: black;
+}
+
+.menu{
+    display: none;
+    font-size: 22px;
+}
+
+.menu_one ul{
+    position: absolute;
+    top: 42px;
+    right: 0px;
+    height: 100vh;
+    width: 250px;
+    background-color: red;
+    text-align: center;
+    font-size: 22px;
+    display: none;
+}
+
+.menu_one ul li{
+    padding-top: 20px;
+}
+
+.nav_links{
+    color: #fff;
+}
+
+
+.login{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.inp_main input{
+    width: 60%;
+    padding: 10px;
+    margin-top: 20px;
+}
+.btn1{
+    margin-top: 30px;
+    padding: 12px 12%;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.btn1:hover{
+    background-color: #fff;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+}
+
+h4{
+    margin: 20px 0px;
+}
+
+
+section{
+    background-color: rgb(212, 205, 205);
+    min-height: 100vh;
+    padding-top: 40px;
+}
+
+.home_main{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    background-color: #fff;
+    height: 200px;
+}
+
+.inp_main1 input{
+    padding: 12px;
+    width: 90%;
+    margin-top: 12px;
+    outline: none;
+    border: 1px solid rgb(219, 214, 214);
+}
+
+.btn2{
+    padding: 12px 15%;
+    margin-top: 30px;
+    background: black;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+.btn2:hover{
+    background-color: #fff;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+}
+
+.task_main{
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 14px 0;
+}
+
+.todo_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+.btn3{
+    padding: 6px 35px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.btn3:hover{
+    background-color: #fff;
+    border: 1px solid black;
+    color: black;
+    cursor: pointer;
+}
+
+.check_inp{
+    width: 16px;
+    cursor: pointer;
+    height: 16px;
+}
+
+
+
+
+
+/* <-----------media query-----------> */
+
+@media only screen and (max-width: 716px){
+    .menu{
+        display: block;
+    }
+    .right_nav ul{
+        display: none;
+    }
+    .menu_one ul{
+        display: block;
+    }
+    .inp_main input{
+        width: 90%;
+    }
+    .home_main{
+        width: 100%;
+    }
+    .task_main{
+        width: 100%;
+    }
+    .todo_item{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
